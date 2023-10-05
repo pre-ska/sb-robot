@@ -6,12 +6,6 @@ const meta: Meta<typeof Light> = {
   component: Light,
   title: 'Components/Light',
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: { type: 'radio' },
-      options: ['green', 'yellow', 'red'],
-    },
-  },
 };
 
 export default meta;
@@ -22,17 +16,35 @@ export const Base: Story = {
   args: {
     variant: 'green',
   },
+  argTypes: {
+    variant: {
+      control: { type: 'radio' },
+      options: ['green', 'yellow', 'red'],
+    },
+  },
 };
 
 export const Yellow: Story = {
   args: {
     variant: 'yellow',
   },
+  argTypes: {
+    variant: {
+      control: { type: 'radio' },
+      options: ['green', 'yellow', 'red'],
+    },
+  },
 };
 
 export const Red: Story = {
   args: {
     variant: 'red',
+  },
+  argTypes: {
+    variant: {
+      control: { type: 'radio' },
+      options: ['green', 'yellow', 'red'],
+    },
   },
 };
 
