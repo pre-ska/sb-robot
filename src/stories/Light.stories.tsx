@@ -4,7 +4,7 @@ import Light from './Light';
 
 const meta: Meta<typeof Light> = {
   component: Light,
-  title: 'Light',
+  title: 'Components/Light',
   tags: ['autodocs'],
   argTypes: {
     variant: {
@@ -37,8 +37,10 @@ export const Red: Story = {
 };
 
 // custom render
+
+/** Robot comment - next to story in code, visible under title in Storybook docs */
 export const ARobot: Story = {
-  render: (args) => (
+  render: () => (
     <div
       style={{
         background: 'gray',

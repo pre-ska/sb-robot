@@ -1,7 +1,9 @@
 type Props = {
+  /** some description from component type Props!!!! */
   variant?: 'green' | 'yellow' | 'red';
 };
 
+/** This comment is in front of component Light */
 const Light = ({ variant = 'green' }: Props) => {
   return (
     <div
